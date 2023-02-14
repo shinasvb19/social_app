@@ -17,7 +17,7 @@ const MainHeader = ({ data }) => {
         </div>
         <div className="text-white mx-20 my-10">mega shipment</div>
         <div className="text-white w-[90%] font-medium text-[93px] font-serif  mx-20">
-          {data.header}
+          {data?.header}
         </div>
         <div className="flex justify-start">
           <Button
@@ -46,7 +46,7 @@ const MainHeader = ({ data }) => {
         </div>
       </div>
       <div
-        style={{ backgroundImage: `url(${data.img1})` }}
+        style={{ backgroundImage: `url(${data?.img1})` }}
         className="bg-cover bg-no-repeat"
       >
         <div className="w-[743.11px] h-[148.36px] right-0 z-20 bg-gradient-to-r to-[#232197] from-[#E85BFF] absolute bottom-16 rounded-l-3xl text-white py-[40px] px-8 text-3xl ">

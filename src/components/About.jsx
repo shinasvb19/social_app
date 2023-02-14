@@ -9,14 +9,14 @@ const About = ({ data }) => {
             About us
           </div>
           <h1 className="text-white px-20 mt-6 w-28 overflow-hidden ">
-            {data.aboutDesc}
+            {data?.aboutDesc}
           </h1>
           <h1 className="text-[#FFBD3E] px-20 mt-12 text-3xl font-medium">
             Reach us
           </h1>
           <div className="mx-20 mt-10 flex  items-center">
             <BsFillTelephoneInboundFill className="text-white" />
-            <div className="mx-4 text-white font-thin">{data.mobile}</div>
+            <div className="mx-4 text-white font-thin">{data?.mobile}</div>
           </div>
         </div>
         <div className="h-[628.36px] w-[600.14px] border-red-300 border-2 rounded-[250px] mt-10 flex items-center justify-center">
