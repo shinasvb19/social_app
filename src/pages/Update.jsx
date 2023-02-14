@@ -24,23 +24,14 @@ const Update = () => {
       .then((data) => {
         const img1 = data.url;
 
-        axios
-          .post(
-            "https://social-app-sm6d.onrender.com/post",
-            {
-              img1,
-              header,
-              aboutDesc,
-              mobile,
-              email,
-            },
-            {
-              headers: {
-                "Content-Type": "application/json",
-                "Access-Control-Allow-Origin": "*",
-              },
-            }
-          )
+        instance
+          .post("/post", {
+            img1,
+            header,
+            aboutDesc,
+            mobile,
+            email,
+          })
           .then((res) => console.log(res));
       });
   };
