@@ -26,7 +26,7 @@ const Update = () => {
 
         axios
           .post(
-            "http://localhost:5000/post",
+            "https://social-app-sm6d.onrender.com/post",
             {
               img1,
               header,
